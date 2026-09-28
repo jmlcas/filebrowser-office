@@ -1,0 +1,14 @@
+services:
+
+  filebrowser:
+    image: ghcr.io/gtsteffaniak/filebrowser:beta
+    container_name: filebrowser
+    ports:
+      - "8900:80"
+    restart: unless-stopped
+    user: "1000:1000"
+    volumes:
+      - ./data:/home/filebrowser/data
+      - ./files:/files
+    environment:
+      - FILEBROWSER_CONFIG=data/config.yaml
