@@ -1,4 +1,4 @@
-# FileBrowser Quantum
+# FileBrowser Quantum - Office
 
 Ver en "http://localhost:8900"
 
