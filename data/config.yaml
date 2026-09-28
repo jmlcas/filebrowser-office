@@ -1,5 +1,5 @@
 server:
-  database:
+  database:                                                                      
     path: "data/filebrowser.sqlite"
   cacheDir: "data/tmp"
   sources:
@@ -23,3 +23,10 @@ auth:
       signup: true
   adminUsername: admin
   adminPassword: admin # remove this after first startup if you want to change this password manually.
+
+integrations:
+  media:
+    ffmpegPath: "/usr/local/bin"
+  office:
+    url: "http://localhost:8500"  # http://IP:8500 ó https://tudominio.com
+    secret: dCYlN0UjXA0sO4lQaz0JxMd11U1c0lausHwKrW1Jat8=
