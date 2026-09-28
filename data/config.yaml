@@ -1,5 +1,5 @@
 server:
-  database:                                                                      
+  database:  
     path: "data/filebrowser.sqlite"
   cacheDir: "data/tmp"
   sources:
