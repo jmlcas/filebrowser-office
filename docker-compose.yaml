@@ -12,3 +12,27 @@ services:
       - ./files:/files
     environment:
       - FILEBROWSER_CONFIG=data/config.yaml
+      - TZ=Europe/Madrid
+      - FILEBROWSER_ONLYOFFICE_SECRET=dCYlN0UjXA0sO4lQaz0JxMd11U1c0lausHwKrW1Jat8=
+
+#  onlyoffice:
+#    image: onlyoffice/documentserver:latest
+#    container_name: onlyoffice
+#    restart: unless-stopped
+#    ports:
+#      - "8500:80"
+#    environment:
+#      - JWT_ENABLED=true
+#      - JWT_SECRET=dCYlN0UjXA0sO4lQaz0JxMd11U1c0lausHwKrW1Jat8=
+#      - JWT_HEADER=Authorization
+
+  euro-office:
+    image: ghcr.io/euro-office/documentserver:latest
+    container_name: euro-office
+    ports:
+      - "8500:80"
+    restart: unless-stopped
+    environment:
+      - EXAMPLE_ENABLED=true
+      - JWT_SECRET=dCYlN0UjXA0sO4lQaz0JxMd11U1c0lausHwKrW1Jat8=
+      - THEME=euro-office
