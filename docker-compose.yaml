@@ -12,6 +12,7 @@ services:
       - ./files:/files
     environment:
       - FILEBROWSER_CONFIG=data/config.yaml
+      - FILEBROWSER_DATABASE_PATH="data/filebrowser.sqlite"
       - TZ=Europe/Madrid
       - FILEBROWSER_ONLYOFFICE_SECRET=dCYlN0UjXA0sO4lQaz0JxMd11U1c0lausHwKrW1Jat8=
 
