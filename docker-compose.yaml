@@ -26,6 +26,8 @@ services:
 #      - JWT_ENABLED=true
 #      - JWT_SECRET=dCYlN0UjXA0sO4lQaz0JxMd11U1c0lausHwKrW1Jat8=
 #      - JWT_HEADER=Authorization
+#    volumes:
+#      - ./onlyoffice:/var/www/onlyoffice/Data
 
   euro-office:
     image: ghcr.io/euro-office/documentserver:latest
@@ -34,6 +36,8 @@ services:
       - "8500:80"
     restart: unless-stopped
     environment:
-      - EXAMPLE_ENABLED=true
+      - JWT_ENABLED=true
       - JWT_SECRET=dCYlN0UjXA0sO4lQaz0JxMd11U1c0lausHwKrW1Jat8=
       - THEME=euro-office
+    volumes:
+      - ./eurooffice:/var/www/euro-office/Data
