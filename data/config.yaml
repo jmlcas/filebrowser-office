@@ -30,3 +30,4 @@ integrations:
   office:
     url: "http://localhost:8500"  # http://IP:8500 ó https://tudominio.com
     secret: dCYlN0UjXA0sO4lQaz0JxMd11U1c0lausHwKrW1Jat8=
+    viewOnly: false
