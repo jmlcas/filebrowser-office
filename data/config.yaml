@@ -21,8 +21,8 @@ auth:
       enabled: true
       minLength: 5
       signup: true
-  adminUsername: admin
-  adminPassword: admin # remove this after first startup if you want to change this password manually.
+  adminUsername: "admin"
+  adminPassword: "admin"
 
 integrations:
   media:
